@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "One-Click HAR Exporter",
+  "description": "Export HAR files with a single click directly from the browser's toolbar.",
+  "version": "1.0",
+  "homepage_url": "https://github.com/harsh98trivedi/One-Click-HAR-Exporter",
+  "permissions": ["debugger", "activeTab", "tabs", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
